@@ -310,7 +310,7 @@ nav .nav-links a {
 
     .hero-container {
         flex-direction: column;
-        height: auto;
+        height: 700px;
         padding: 30px 15px;
         text-align: center;
     }
@@ -354,4 +354,5 @@ nav .nav-links a {
         margin-top: 20px;
       
     }
+
 }
