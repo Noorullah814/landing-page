@@ -198,12 +198,13 @@ nav .nav-links a {
     background-color: rgb(245, 239, 239);
     display: flex;
     height: 100vh;
+     width: 100%;
 
 }
 
 .hero-content {
     height: 70vh;
-    padding-top: 100px;
+    padding: 70px;
 
 
 }
@@ -260,21 +261,23 @@ nav .nav-links a {
 }
 
 .hero-image {
-    height: 100vh;
+    flex: 1;
 
 }
 
 .hero-image img {
-    height: 100vh;
-
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
 
 }
 
 @media (min-width:768px) and (max-width: 992px) {
     .hero-container {
+        
         flex-direction: column;
         height: auto;
-        padding: 40px 20px;
         text-align: center;
     }
 
@@ -298,21 +301,25 @@ nav .nav-links a {
         justify-content: center;
     }
 
+
     .hero-image img {
-        width: 100%;
-        height: auto;
-        margin-top: 30px;
+           width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 
 @media (max-width:767px) {
 
+
+  
     .hero-container {
         flex-direction: column;
-        height: 870px;
-        padding: 30px 15px;
+        height: auto;
+         width: 100%;
         text-align: center;
+        
     }
 
     .hero-content {
@@ -338,6 +345,7 @@ nav .nav-links a {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-bottom: 15px;
     }
 
     .hero-buttons .btn-primary,
@@ -349,11 +357,10 @@ nav .nav-links a {
     }
 
     .hero-image img {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
+         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       
     }
-
 }
-
